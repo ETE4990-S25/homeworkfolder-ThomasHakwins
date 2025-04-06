@@ -58,7 +58,7 @@ def threading_prime():
     start_time = time.time()
     print(f"Threading start time: {time.ctime(start_time)}")
     
-    result = [0]  # Mutable list for shared memory
+    result = [0] 
 
     thread = threading.Thread(target=find_highest_prime, args=(Amount_oftime, result))
     thread.start()
